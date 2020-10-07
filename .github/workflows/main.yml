@@ -1,6 +1,7 @@
 # This is a basic shoe store which was created wth the help of React - Routes
 
-name: Animated React App
+name: Animated React Application
+
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
 on:
@@ -20,7 +21,7 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
-
+      
     - name: Install NodeJS
       uses: actions/setup-node@v2-beta
       with:
@@ -30,12 +31,12 @@ jobs:
       uses: borales/actions-yarn@v2.0.0
       with:
         cmd: install
-
+      
     - name: build React App
       run: yarn build
-
+      
     - name: Install Surge
       run: npm install --global surge
-
+    
     - name: Deploy to Surge
-      run: surge ./build animated-react-app-ali.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
+      run: surge ./build animated-react-projetc-ali.surge.sh/ --token ${{secrets.SURGE_TOKEN}}

@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react'
 import { motion } from "framer-motion";
-import { AutoRotatingCarousel, Slide } from 'material-auto-rotating-carousel';
 
 
 const variants = {
@@ -15,10 +14,6 @@ function More() {
                         <motion.div initial="hidden" animate="visible" variants={variants}>
                             I am more
                         </motion.div>
-
-
-
-
 
         </div>
     )

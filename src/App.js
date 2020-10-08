@@ -7,14 +7,18 @@ import Extra from './components/Extra'
 import NotFound from './components/NotFound'
 import More from './components/More'
 import Contact from './components/Contact'
+import Footer from './components/Footer';
+import New from './components/New';
+
 
 
 function App() {
   return (
-    <div className = 'background1'>
+    <div >
       <Header />
 
       <Routes>
+
       <Route path="/" element={<Home />} />
       <Route path="/Extra" element={<Extra />} />
       <Route path="/More" element={<More />} />
@@ -22,6 +26,8 @@ function App() {
       <Route path='*' element={<NotFound />} />
 
       </Routes>
+      
+      <Footer />
       </div>
   );
 }

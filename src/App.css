@@ -1,13 +1,33 @@
-.background1 {
+.homeBG {
   background: wheat;
-  height: 100vh;  
+  height: 89vh;  
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+.extraBG {
+  background: wheat;
+  height: 100vh;  
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 0%;
+}
+
+.moreBG {
+  background: wheat;
+  height: 90vh;  
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contactBG {
+  background: wheat;
+  height: 89vh;  
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .header {
-  background-color: transparent;
-  height: 10vh;
+  background-color: whitesmoke;
   margin: auto;
   text-align: center;
   font-size: 18px;
@@ -19,4 +39,22 @@
   background-color: #ff00001e;
   display: block;
   /* color: white; */
+}
+
+
+.footer {
+
+  background-color: whitesmoke;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  
+}
+
+.notfound {
+  background-image: url("https://i2.wp.com/learn.onemonth.com/wp-content/uploads/2017/08/1-10.png?fit=845%2C503&ssl=1");
+  height: 80vh;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

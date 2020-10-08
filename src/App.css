@@ -1,12 +1,12 @@
 .homeBG {
-  background: wheat;
+  background: white;
   height: 89vh;  
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .extraBG {
-  background: wheat;
+  background: white;
   height: 100vh;  
   background-repeat: no-repeat;
   background-size: cover;
@@ -14,14 +14,14 @@
 }
 
 .moreBG {
-  background: wheat;
+  background: white;
   height: 90vh;  
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .contactBG {
-  background: wheat;
+  background: white;
   height: 89vh;  
   background-repeat: no-repeat;
   background-size: cover;
@@ -48,6 +48,8 @@
   height: 20vh;
   display: flex;
   align-items: center;
+  padding: 10px 15px;
+  text-align: center;
   
 }
 
@@ -58,3 +60,31 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+
+.button {
+  background-color: whitesmoke; /* Green */
+  border: none;
+  color: black;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 20px;
+
+}
+
+
+
+.button:hover {
+  background-color:  #adacac;
+}
+
+a:visited, a:link, a:hover {
+  color: black;
+  text-decoration: none;
+
+}
+

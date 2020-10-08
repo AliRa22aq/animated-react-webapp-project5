@@ -1,10 +1,10 @@
 import React from 'react'
+import '../App.css';
+
 
 function NotFound() {
     return (
-        <div>
-            Page Not Found
-        </div>
+        <div className='notfound'>  </div>
     )
 }
 

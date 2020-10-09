@@ -1,55 +1,75 @@
-import React, {useEffect} from 'react'
-import { motion, useAnimation } from "framer-motion"
+import React from 'react'
+import { motion } from "framer-motion";
+import { Card, CardDeck } from 'react-bootstrap';
+
 
 const variants = {
     visible: { opacity: 1 },
     hidden: { opacity: 0 },
   }
 
-const item = {
-    visible: { opacity: 1, x: 0 },
-    hidden: { opacity: 0, x: -100 },
-  }
 
-const list = {
-    visible: {
-      opacity: 1,
-      transition: {
-        when: "beforeChildren",
-        staggerChildren: 0.5,
-      },
-    },
-    hidden: {
-      opacity: 0,
-      transition: {
-        when: "afterChildren",
-      }
-    }
-}
 
 function Extra() {
 
     return (
         <div className='extraBG'>
             <motion.div initial="hidden" animate="visible" variants={variants}>
-                <motion.ul initial="hidden" animate="visible" variants={list}>
-                     
-                    <motion.li variants={item}> A </motion.li>
-                    <motion.li variants={item}> B </motion.li>
-                    <motion.li variants={item}> C </motion.li>
-                    <motion.li variants={item}> D </motion.li>
-                    <motion.li variants={item}> E </motion.li>
-                    <motion.li variants={item}> F </motion.li>
-                    <motion.li variants={item}> G </motion.li>
-                    <motion.li variants={item}> H </motion.li>
-                    <motion.li variants={item}> I </motion.li>
-                    <motion.li variants={item}> J </motion.li>
-                    <motion.li variants={item}> K </motion.li>
 
 
-                </motion.ul>
+                
 
-            </motion.div>
+          <CardDeck>
+
+            <Card>
+              <Card.Img variant="top" src="holder.js/100px160" />
+              <Card.Body>
+                <Card.Title>Card title</Card.Title>
+                <Card.Text>
+                  This is a wider card with supporting text below as a natural lead-in to
+                  additional content. This content is a little bit longer.
+                </Card.Text>
+              </Card.Body>
+              <Card.Footer>
+                <small className="text-muted">Last updated 3 mins ago</small>
+              </Card.Footer>
+            </Card>
+
+
+            <Card>
+              <Card.Img variant="top" src="holder.js/100px160" />
+              <Card.Body>
+                <Card.Title>Card title</Card.Title>
+                <Card.Text>
+                  This card has supporting text below as a natural lead-in to additional content.{' '}
+                </Card.Text>
+              </Card.Body>
+              <Card.Footer>
+                <small className="text-muted">Last updated 3 mins ago</small>
+              </Card.Footer>
+            </Card>
+
+
+            <Card>
+              <Card.Img variant="top" src="holder.js/100px160" />
+              <Card.Body>
+                <Card.Title>Card title</Card.Title>
+                <Card.Text>
+                  This is a wider card with supporting text below as a natural lead-in to
+                  additional content. This card has even longer content than the first to
+                  show that equal height action.
+                </Card.Text>
+              </Card.Body>
+              <Card.Footer>
+                <small className="text-muted">Last updated 3 mins ago</small>
+              </Card.Footer>
+            </Card>
+            
+          </CardDeck>
+
+
+
+          </motion.div>
 
 
         </div>

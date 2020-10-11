@@ -33,7 +33,7 @@ function Header() {
                 </Grid> 
 
                 <Grid item xs={1} >
-                    <Link to="/Extra">
+                    <Link to="/Services">
                     <motion.button className= 'button' whileHover={{ scale: 1.1, transition: { duration: 0.2 } }} whileTap={{ scale: 1 }}>
                             Services
                         </motion.button>

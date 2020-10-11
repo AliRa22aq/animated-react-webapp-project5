@@ -24,7 +24,7 @@ function Extra() {
                     <h2 className="transition">Service A</h2>
                     <p>Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla.</p>
                     <div className="cta-container transition">
-                      <a href=" " className="cta" >
+                      <a href="#a" className="cta" id="a">
                         Details
                       </a>
                     </div>

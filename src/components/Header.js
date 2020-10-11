@@ -22,7 +22,7 @@ function Header() {
                     </Link>
                 </Grid> 
             
-            <Grid item xs={6} > </Grid> 
+            <Grid item xs={7} > </Grid> 
             
                 <Grid item xs={1} >
                   <Link to="/"> 
@@ -48,13 +48,7 @@ function Header() {
                     </Link>
                 </Grid> 
                
-                <Grid item xs={1} >
-                    <Link to='/Contact'>
-                    <motion.button className= 'button' whileHover={{ scale: 1.1, transition: { duration: 0.2 } }} whileTap={{ scale: 1 }}>
-                            Contact 
-                        </motion.button>
-                    </Link> 
-                </Grid> 
+
 
         </Grid>
             

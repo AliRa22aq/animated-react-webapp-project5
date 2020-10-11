@@ -1,6 +1,7 @@
 import React from 'react'
+import '../App.css';
 import { motion } from "framer-motion";
-import { Card, CardDeck } from 'react-bootstrap';
+import Grid from '@material-ui/core/Grid';
 
 
 const variants = {
@@ -8,70 +9,63 @@ const variants = {
     hidden: { opacity: 0 },
   }
 
-
-
 function Extra() {
 
     return (
         <div className='extraBG'>
             <motion.div initial="hidden" animate="visible" variants={variants}>
+              <div style={{    padding: "50px 0px 0px 120px", boxSizing: 'content-box', margin: "auto"}} >  
+              <Grid container  > 
 
+            <Grid item xs={4}>
+              <div className="body1">
+                <div className="card transition">
+                  <h2 className="transition">Service A</h2>
+                  <p>Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                  <div className="cta-container transition">
+                    <a href="#" className="cta">
+                    Details
+                  </a>
+                  </div>
+                  <div className="card_circle cardcolor1 transition"></div>
+                </div>
+              </div >
+            </Grid>
 
-                
+            <Grid item xs={4}>
+              <div className="body1">
+                <div className="card transition">
+                  <h2 className="transition">Service B</h2>
+                  <p>Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                  <div className="cta-container transition">
+                    <a href="#" className="cta">
+                    Details
+                  </a>
+                  </div>
+                  <div className="card_circle cardcolor2 transition"></div>
+                </div>
+              </div >
+            </Grid>
 
-          <CardDeck>
-
-            <Card>
-              <Card.Img variant="top" src="holder.js/100px160" />
-              <Card.Body>
-                <Card.Title>Card title</Card.Title>
-                <Card.Text>
-                  This is a wider card with supporting text below as a natural lead-in to
-                  additional content. This content is a little bit longer.
-                </Card.Text>
-              </Card.Body>
-              <Card.Footer>
-                <small className="text-muted">Last updated 3 mins ago</small>
-              </Card.Footer>
-            </Card>
-
-
-            <Card>
-              <Card.Img variant="top" src="holder.js/100px160" />
-              <Card.Body>
-                <Card.Title>Card title</Card.Title>
-                <Card.Text>
-                  This card has supporting text below as a natural lead-in to additional content.{' '}
-                </Card.Text>
-              </Card.Body>
-              <Card.Footer>
-                <small className="text-muted">Last updated 3 mins ago</small>
-              </Card.Footer>
-            </Card>
-
-
-            <Card>
-              <Card.Img variant="top" src="holder.js/100px160" />
-              <Card.Body>
-                <Card.Title>Card title</Card.Title>
-                <Card.Text>
-                  This is a wider card with supporting text below as a natural lead-in to
-                  additional content. This card has even longer content than the first to
-                  show that equal height action.
-                </Card.Text>
-              </Card.Body>
-              <Card.Footer>
-                <small className="text-muted">Last updated 3 mins ago</small>
-              </Card.Footer>
-            </Card>
-            
-          </CardDeck>
-
-
+            <Grid item xs={4}>
+              <div className="body1">
+                <div className="card transition">
+                  <h2 className="transition">Service C</h2>
+                  <p>Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                  <div className="cta-container transition">
+                    <a href="#" className="cta">
+                      Details
+                  </a>
+                  </div>
+                  <div className="card_circle cardcolor3 transition"></div>
+                </div>
+              </div >
+            </Grid>
+              
+              </Grid> 
+              </div>
 
           </motion.div>
-
-
         </div>
     )
 }

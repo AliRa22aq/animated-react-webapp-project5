@@ -34,7 +34,7 @@ const AccordionSummary = withStyles({
   },
   content: {
     '&$expanded': {
-      margin: '12px 12px',
+      margin: '12px 20px',
     },
   },
   expanded: {},

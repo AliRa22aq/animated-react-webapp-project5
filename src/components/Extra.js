@@ -33,7 +33,7 @@ function Extra() {
                 </div >
               </Grid>
 
-            <Grid item xs={4}>
+              <Grid item xs={4}>
               <div className="body1">
                 <div className="card transition">
                   <h2 className="transition">Service B</h2>

@@ -109,7 +109,7 @@ export default function AccordionX () {
  
       <Accordion square expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
         <AccordionSummary aria-controls="panel4d-content" id="panel4d-header">
-        <Typography variant="h4">Careers</Typography>
+        <Typography variant="h4">Contact</Typography>
         </AccordionSummary>
         <AccordionDetails>
         <Typography variant="subtitle2">
@@ -122,6 +122,7 @@ export default function AccordionX () {
           </Typography>
         </AccordionDetails>
         </Accordion>
+
 
  
     </div>

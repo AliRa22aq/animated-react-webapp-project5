@@ -13,7 +13,7 @@ const variants = {
 function Extra() {
 
     return (
-        <div className='extraBG'>
+        <div className='extraBG'  id="a">
             <motion.div initial="hidden" animate="visible" variants={variants}>
               <div style={{    padding: "50px 0px 0px 120px", boxSizing: 'content-box', margin: "auto"}} >  
               <Grid container  > 
@@ -24,7 +24,7 @@ function Extra() {
                     <h2 className="transition">Service A</h2>
                     <p>Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla.</p>
                     <div className="cta-container transition">
-                      <a href="#a" className="cta" id="a">
+                      <a href="#a" className="cta">
                         Details
                       </a>
                     </div>
@@ -39,11 +39,9 @@ function Extra() {
                   <h2 className="transition">Service B</h2>
                   <p>Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla.</p>
                   <div className="cta-container transition">
-                    <div className="cta">
-                      <Link to="/Extra" > 
-                    Details
-                    </Link>
-                    </div>
+                  <a href="#a" className="cta">
+                        Details
+                      </a>
                   </div>
                   <div className="card_circle cardcolor2 transition"></div>
                 </div>
@@ -56,11 +54,9 @@ function Extra() {
                   <h2 className="transition">Service C</h2>
                   <p>Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla.</p>
                   <div className="cta-container transition">
-                  <div className="cta">
-                      <Link to="/Extra" > 
-                    Details
-                    </Link>
-                    </div>
+                  <a href="#a" className="cta">
+                        Details
+                      </a>
                   </div>
                   <div className="card_circle cardcolor3 transition"></div>
                 </div>

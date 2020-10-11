@@ -6,7 +6,6 @@ import Home from './components/Home'
 import Services from './components/Services'
 import NotFound from './components/NotFound'
 import More from './components/More'
-import Contact from './components/Contact'
 import Footer from './components/Footer';
 
 
@@ -20,7 +19,6 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route path="/Services" element={<Services />} />
       <Route path="/More" element={<More />} />
-      <Route path="/Contact" element={<Contact />} />
       <Route path='*' element={<NotFound />} />
 
       </Routes>

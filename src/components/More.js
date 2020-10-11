@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from "framer-motion";
-import Test from './Test'
+import AccordionX from './AccordionX'
 
 
 
@@ -16,7 +16,7 @@ function More() {
     return (
         <div className='moreBG'>
         <motion.div initial="hidden" animate="visible" variants={variants}>
-                <Test />
+                <AccordionX />
         </motion.div>
 
 

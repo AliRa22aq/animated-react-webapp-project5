@@ -8,7 +8,6 @@ import NotFound from './components/NotFound'
 import More from './components/More'
 import Contact from './components/Contact'
 import Footer from './components/Footer';
-import Cards from './components/Cards';
 
 
 function App() {

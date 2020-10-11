@@ -40,9 +40,11 @@ function Home() {
                     <div id="homeText">
                     
                         <motion.ul initial="hidden" animate="visible" variants={list}>
-                            <motion.li variants={item}> A </motion.li>
-                            <motion.li variants={item}> B </motion.li>
-                            <motion.li variants={item}> C </motion.li>
+                            <motion.li variants={item}> Statement A </motion.li>
+                            <motion.li variants={item}> Statement B </motion.li>
+                            <motion.li variants={item}> Statement C </motion.li>
+                            <motion.li variants={item}> Statement D </motion.li>
+
                         </motion.ul>
                     </div>
 
@@ -50,7 +52,7 @@ function Home() {
                 </Grid>
                
                 <Grid item xs={6} > 
-                <Carousel style={{width:"600px", padding: "70px 0px 0px 0px"}}>
+                <Carousel style={{width:"600px", padding: "70px 0px 70px 0px"}}>
                     <Carousel.Item>
                         <img
                             className="d-block w-100"

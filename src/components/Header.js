@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { motion } from "framer-motion";
 
 
+
 function Header() {
     return (
         <div class='header' >
@@ -25,7 +26,7 @@ function Header() {
             
                 <Grid item xs={1} >
                   <Link to="/"> 
-                    <motion.button className= 'button' whileHover={{ scale: 1.2, transition: { duration: 0.2 } }} whileTap={{ scale: 0.9 }}>
+                    <motion.button className= 'button' whileHover={{ scale: 1.1, transition: { duration: 0.2 } }} whileTap={{ scale: 1 }}>
                     Home 
                     </motion.button>
                   </Link>
@@ -33,7 +34,7 @@ function Header() {
 
                 <Grid item xs={1} >
                     <Link to="/Extra">
-                        <motion.button className='button' whileHover={{ scale: 1.2, transition: { duration: 0.2 } }} whileTap={{ scale: 0.9 }}>
+                    <motion.button className= 'button' whileHover={{ scale: 1.1, transition: { duration: 0.2 } }} whileTap={{ scale: 1 }}>
                             Services
                         </motion.button>
                     </Link>
@@ -41,7 +42,7 @@ function Header() {
                 
                 <Grid item xs={1} >
                     <Link to='/More'> 
-                        <motion.button className='button' whileHover={{ scale: 1.2, transition: { duration: 0.2 } }} whileTap={{ scale: 0.9 }}>
+                    <motion.button className= 'button' whileHover={{ scale: 1.1, transition: { duration: 0.2 } }} whileTap={{ scale: 1 }}>
                             More
                         </motion.button>
                     </Link>
@@ -49,7 +50,7 @@ function Header() {
                
                 <Grid item xs={1} >
                     <Link to='/Contact'>
-                        <motion.button className= 'button' whileHover={{ scale: 1.2, transition: { duration: 0.2 } }} whileTap={{ scale: 0.9 }}>
+                    <motion.button className= 'button' whileHover={{ scale: 1.1, transition: { duration: 0.2 } }} whileTap={{ scale: 1 }}>
                             Contact 
                         </motion.button>
                     </Link> 

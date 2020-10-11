@@ -3,7 +3,7 @@ import './App.css';
 import Header from './components/Header'
 import { Routes, Route } from 'react-router-dom';
 import Home from './components/Home'
-import Extra from './components/Extra'
+import Services from './components/Services'
 import NotFound from './components/NotFound'
 import More from './components/More'
 import Contact from './components/Contact'
@@ -18,7 +18,7 @@ function App() {
       <Routes>
 
       <Route path="/" element={<Home />} />
-      <Route path="/Extra" element={<Extra />} />
+      <Route path="/Services" element={<Services />} />
       <Route path="/More" element={<More />} />
       <Route path="/Contact" element={<Contact />} />
       <Route path='*' element={<NotFound />} />
